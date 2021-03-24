@@ -1,0 +1,64 @@
+.fondos{
+    -fx-background-image: url("./imagen/fondo.jpg");
+
+}
+.botones{
+    -fx-background-image: url("../sample/imagen/cuadro.png");
+    -fx-background-size: 100% 100%;
+
+    -fx-background-color: #F1FAEE;
+    -fx-background-radius: 200px;
+}
+.btnMenos{
+    -fx-background-image: url("../sample/imagen/remove.png");
+    -fx-background-size: 100% 100%;
+
+    -fx-background-color: #F1FAEE;
+    -fx-background-radius: 200px;
+}
+.btnCirculo{
+    -fx-background-image: url("../sample/imagen/rec.png");
+    -fx-background-size: 100% 100%;
+
+    -fx-background-color: #F1FAEE;
+    -fx-background-radius: 200px;
+}
+.btnErase{
+    -fx-background-image: url("../sample/imagen/eraser.png");
+    -fx-background-size: 100% 100%;
+
+    -fx-background-color: #F1FAEE;
+    -fx-background-radius: 200px;
+}
+.btnPincel{
+    -fx-background-image: url("../sample/imagen/brush.png");
+    -fx-background-size: 100% 100%;
+
+    -fx-background-color: #F1FAEE;
+    -fx-background-radius: 200px;
+}
+.btnGuardar{
+    -fx-background-image: url("../sample/imagen/folder.png");
+    -fx-background-size: 100% 100%;
+
+    -fx-background-color: #F1FAEE;
+    -fx-background-radius: 200px;
+}
+.btns{
+    -fx-background-color: #c96863;
+    -fx-background-radius: 10px;
+}
+.textfield{
+    -fx-background-color: #c96863;
+    -fx-background-radius: 15px;
+}
+//pantalla dos
+.cabecera{
+    -fx-background-color: #507dbc;
+}
+.cabecera2{
+-fx-background-color: #000000;
+}
+.fondo2{
+ -fx-background-radius: 15px;
+}

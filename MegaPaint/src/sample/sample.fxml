@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane maxHeight="250.0" prefHeight="22.0" prefWidth="700.0">
+         <top>
+            <HBox alignment="TOP_CENTER" maxWidth="700.0" prefHeight="50.0" prefWidth="580.0" styleClass="cabecera" stylesheets="@estilos.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label maxWidth="200.0" prefHeight="18.0" prefWidth="70.0" text="PaintFX">
+                     <HBox.margin>
+                        <Insets left="-70.0" right="10.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="slider" max="60.0" maxWidth="120.0" min="2.0" prefHeight="14.0" prefWidth="90.0">
+                     <HBox.margin>
+                        <Insets left="-20.0" top="15.0" />
+                     </HBox.margin>
+                  </Slider>
+                  <Button alignment="CENTER" cache="true" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="botones" stylesheets="@estilos.css">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btnMenos" stylesheets="@estilos.css">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" stylesheets="@estilos.css">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="botones" />
+                        <String fx:value="btnCirculo" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#borrar" prefHeight="30.0" prefWidth="30.0" styleClass="btnErase" stylesheets="@estilos.css">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btnPincel" stylesheets="@estilos.css">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="btnGuardar" stylesheets="@estilos.css">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <ColorPicker fx:id="colorPicker" onAction="#cambiarColor" prefHeight="25.0" prefWidth="115.0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="-10.0" top="10.0" />
+                     </HBox.margin>
+                  </ColorPicker>
+                  <ComboBox fx:id="comboOpciones" prefHeight="25.0" prefWidth="115.0">
+                     <HBox.margin>
+                        <Insets left="15.0" right="-50.0" top="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <Canvas fx:id="lienzo" height="500.0" onMouseDragged="#arrastrar" width="500.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
